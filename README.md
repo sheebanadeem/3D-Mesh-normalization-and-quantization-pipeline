@@ -71,7 +71,7 @@ source .venv/bin/activate   # macOS / Linux
 
 pip install -r requirements.txt
 ```
-###Common dependencies include:
+##Common dependencies include:
 
 nginx
 Copy code
