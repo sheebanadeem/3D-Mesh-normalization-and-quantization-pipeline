@@ -123,6 +123,8 @@ mesh_norm, meta = normalize_mesh(mesh, mode="unit_box")
 mesh_q = quantize_mesh(mesh_norm, bits=12)
 save_mesh(mesh_q, "outputs/model_q12.obj")
 ```
+## Screenshots
+
 ## Example Notebooks
 See the notebooks/ directory for:
 
