@@ -55,10 +55,7 @@ This project provides tools to:
 ├── requirements.txt
 └── README.md
 
-yaml
-Copy code
 
-(Adjust according to your actual folder structure.)
 
 ---
 
@@ -74,7 +71,7 @@ source .venv/bin/activate   # macOS / Linux
 
 pip install -r requirements.txt
 ```
-Common dependencies include:
+###Common dependencies include:
 
 nginx
 Copy code
@@ -85,7 +82,7 @@ open3d
 tqdm
 Usage
 Command-line examples
-Normalize mesh:
+###Normalize mesh:
 
 ```bash
 
@@ -94,7 +91,7 @@ python scripts/normalize.py \
     --output data/bunny_normalized.obj \
     --mode unit_sphere
 ```
-Quantize mesh:
+###Quantize mesh:
 
 ```bash
 Copy code
@@ -103,7 +100,7 @@ python scripts/quantize.py \
     --output data/bunny_q16.obj \
     --bits 16
 ```
-Run full pipeline:
+###Run full pipeline:
 
 ```bash
 
@@ -114,7 +111,7 @@ python scripts/pipeline.py \
     --target-vertices 10000 \
     --quant-bits 12
 ```
-Python API
+###Python API
 ```bash
 
 from mesh_utils.io import load_mesh, save_mesh
@@ -126,7 +123,7 @@ mesh_norm, meta = normalize_mesh(mesh, mode="unit_box")
 mesh_q = quantize_mesh(mesh_norm, bits=12)
 save_mesh(mesh_q, "outputs/model_q12.obj")
 ```
-Example Notebooks
+###Example Notebooks
 See the notebooks/ directory for:
 
 step-by-step mesh normalization
@@ -137,7 +134,7 @@ quantization error measurement
 
 compression comparisons
 
-Evaluation Metrics
+###Evaluation Metrics
 Common metrics for evaluating quantization:
 
 RMSE between original and dequantized vertices
@@ -148,7 +145,7 @@ Angular error in normals
 
 Compression ratio and file size savings
 
-Testing
+###Testing
 Run tests using:
 
 ```bash
@@ -174,7 +171,7 @@ Open a pull request
 
 
 
-Author
+###Author
 Developed by Sheeba Nadeem.
 
 
