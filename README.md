@@ -123,7 +123,14 @@ mesh_norm, meta = normalize_mesh(mesh, mode="unit_box")
 mesh_q = quantize_mesh(mesh_norm, bits=12)
 save_mesh(mesh_q, "outputs/model_q12.obj")
 ```
-## Screenshots
+## A few Screenshots
+<p align="center">
+  <img src="output\girl_normalized.png" width"700">
+</p>
+<p align="center">
+  <img src="output\person_quantized.png" width"700">
+</p>
+
 
 ## Example Notebooks
 See the notebooks/ directory for:
